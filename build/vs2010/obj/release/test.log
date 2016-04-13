@@ -1,0 +1,21 @@
+﻿Build started 07/04/2016 08:16:21.
+     1>Project "D:\Desktop\Organizacao de Pastas\Doutorado\gps-drone-github\build\vs2010\test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\obj\release\test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         test.vcxproj -> D:\Desktop\Organizacao de Pastas\Doutorado\gps-drone-github\build\vs2010\..\..\bin\vs2010\test.exe
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file ".\obj\release\test.unsuccessfulbuild".
+         Touching ".\obj\release\test.lastbuildstate".
+     1>Done Building Project "D:\Desktop\Organizacao de Pastas\Doutorado\gps-drone-github\build\vs2010\test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07
