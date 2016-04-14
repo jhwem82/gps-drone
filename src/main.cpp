@@ -5,7 +5,7 @@
      Release
  Details:
 	ArDrone 2.0 GPS control/navigation program 
-	Please read with attention the comments in the code
+	Please pay  attention to the comments in the code
  ---------------------------------------------------------------------------*/
 
 #include "ardrone/ardrone.h"
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	// AR.Drone class
 	ARDrone d1("192.168.1.20"); //d1 - nomenclature of the drone
 
-    // Position control variables
+        // Position control variables
 	double d1_xd = 0.0, d1_yd = 0.0, d1_zd = 0.0, d1_psid = 0.0; //positions
 	double d1_xdp = 0.0, d1_ydp = 0.0, d1_zdp = 0.0, d1_psidp = 0.0; //velocities
 	double d1_xdpp = 0.0, d1_ydpp = 0.0, d1_zdpp = 0.0, d1_psidpp = 0.0; //accelerations
