@@ -5,8 +5,6 @@
 Abstract: 
 This paper reports the design and the experimental validation of a novel mechatronic solution, developed to support outdoor flights using an affordable commercial quadrotor and a personal computer as the basic hardware. The text discusses some technical details of the developed platform, making clear to the readers how to achieve real-time navigation capabilities adopting a simplified dynamic model as a high-level representation of the vehicle in flight, a general-purpose nonlinear controller, suitable for different types of control applications, and a sensor fusion algorithm, designed to compensate for delayed measurements in the available sensorial data. In order to check the effectiveness of the proposed algorithms, results associated to some experimental flights are presented, with the vehicle accomplishing positioning tasks, including waypoint navigation, and trajectory tracking tasks. Such results, in parallel to the theoretical analysis provided, allows claiming that the proposed platform is efficient under several scenarios. Additionally, the source code used is made freely available for download and modification, resulting in an open-source computational platform, valuable as a starting point for beginning researchers in the field of aerial robotics.
 ------------------------------------------------------------------------------------------------------
-The codes of the open-source computational platform ... will be available after the article acceptance ...
-Information about the basis code compilation can be found in https://github.com/puku0x/cvdrone
 This code example was compiled using Windows 7 and Visual Studio 2010.
 ------------------------------------------------------------------------------------------------------
 Important modifications over CVDrone:
@@ -20,18 +18,17 @@ Important modifications over CVDrone:
       Exclude the internal function gains;
   2) Change the maximum values for the controller
       Set vz_max for 1 [m/s]: sockCommand.sendf("AT*CONFIG=%d,\"control:control_vz_max\",\"%d\"\r", ++seq, 1000);
-      Set inc_max for 15 [°]: sockCommand.sendf("AT*CONFIG=%d,\"control:euler_angle_max\",\"%f\"\r", ++seq, 15.0 * DEG_TO_RAD);
-      Set vr_max for 100 [°/s]: sockCommand.sendf("AT*CONFIG=%d,\"control:control_yaw\",\"%f\"\r", ++seq, 100.0 * DEG_TO_RAD);
+      Set inc_max for 15 [Â°]: sockCommand.sendf("AT*CONFIG=%d,\"control:euler_angle_max\",\"%f\"\r", ++seq, 15.0 * DEG_TO_RAD);
+      Set vr_max for 100 [Â°/s]: sockCommand.sendf("AT*CONFIG=%d,\"control:control_yaw\",\"%f\"\r", ++seq, 100.0 * DEG_TO_RAD);
       Set z_max for 10 [m]:  sockCommand.sendf("AT*CONFIG=%d,\"control:altitude_max\",\"%d\"\r", ++seq, 10000);
   
   "navdata.cpp"
   1) Disable bootstrap mode
       sockCommand.sendf("AT*CONFIG=%d,\"general:navdata_demo\",\"FALSE\"\r", ++seq);
 
-Instalation guide:
-Tutorial for keyboard control of the flight (from computers with Windows)
-Tutorial for wi-fi range extension.
-
+-----------------------------------------------------------------
+Instalation guide - Please visit the CVDrone page by puk0x
+https://github.com/puku0x/cvdrone
 -----------------------------------------------------------------
  CV Drone (= OpenCV + AR.Drone)
  Copyright (C) 2016 puku0x
